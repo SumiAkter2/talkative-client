@@ -1,14 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import MessagePage from './Pages/MessagePage';
-import Chatting from './Pages/Chatting';
+
+import { Route, Routes } from 'react-router-dom';
+import Both from './Pages/Both';
+
+import Login from './Pages/Login';
+
 
 function App() {
   return (
-    <div class=" grid lg:grid-cols-3  gap-4">
-      <div>  <MessagePage /></div>
-      <div> <Chatting /></div>
-      <div> <h2>hi</h2></div>
+    <div>
+      <Routes>
+        <Route path='/' element={<Login></Login>}></Route>
+        <Route path='/both' element={<Both />}></Route>
+      </Routes>
 
     </div>
   );
