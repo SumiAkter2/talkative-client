@@ -13,6 +13,10 @@ function App() {
         <Route path='/both' element={<Both />}></Route>
       </Routes>
 
+
+
+
+
     </div>
   );
 }
